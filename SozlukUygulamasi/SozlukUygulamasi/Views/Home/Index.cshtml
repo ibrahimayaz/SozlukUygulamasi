@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Sozluk
+
+<div class="text-center">
+    <h1 class="display-4">Türkçe-İngilizce Sözlük Uygulamasına Hoşgeldiniz</h1>
+<form asp-action="Index" method="post">
+        <div class="input-group">
+            <input type="text" asp-for="Tr" class="form-control" />
+            <button class="btn btn-success">Ara Bul Getir</button>
+        </div>
+</form>
+
+<p class="alert alert-info">
+@ViewBag.Sonuc
+</p>
+
+</div>
